@@ -10,6 +10,7 @@
       margin: 0;
       padding: 1rem;
       background: #f9f9f9;
+      color: #222;
     }
     img {
       max-width: 200px;
@@ -17,19 +18,26 @@
       margin: 0 auto 2rem;
     }
     .marca {
+      background: #eee;
       font-weight: bold;
       font-size: 1.2rem;
+      padding: 0.5rem 1rem;
       margin-top: 2rem;
-      color: #333;
+      border-radius: 4px;
     }
     .producto {
       display: flex;
       justify-content: space-between;
-      padding: 0.5rem 0;
+      padding: 0.5rem 1rem;
       border-bottom: 1px solid #ddd;
     }
     .producto span {
-      max-width: 70%;
+      flex: 1;
+      padding-right: 1rem;
+    }
+    .producto strong {
+      white-space: nowrap;
+      color: #000;
     }
   </style>
 </head>
@@ -39,7 +47,10 @@
 
   <script>
     fetch('data.json')
-      .then(response => response.json())
+      .then(response => {
+        if (!response.ok) throw new Error("No se pudo cargar data.json");
+        return response.json();
+      })
       .then(data => {
         const lista = document.getElementById('lista');
         for (const marca in data) {
@@ -55,6 +66,9 @@
             lista.appendChild(prod);
           });
         }
+      })
+      .catch(error => {
+        document.getElementById('lista').innerHTML = `<p style="color:red;">Error al cargar la lista: ${error.message}</p>`;
       });
   </script>
 </body>
