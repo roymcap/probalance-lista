@@ -39,14 +39,26 @@
       white-space: nowrap;
       color: #000;
     }
+    .nota-final {
+      margin-top: 3rem;
+      padding: 1rem;
+      background: #e0f7e0;
+      border-left: 4px solid #4caf50;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
   </style>
 </head>
 <body>
   <img src="logo.jpeg" alt="Pro Balance Suplementos">
   <div id="lista"></div>
+  <div class="nota-final">
+    Aceptamos efectivo, transferencia.<br>
+    Puntos de retiro en Villa Pueyrredon, Villa Devoto, CABA.
+  </div>
 
   <script>
-    fetch('data.json')
+    fetch('data.json?' + new Date().getTime())
       .then(response => {
         if (!response.ok) throw new Error("No se pudo cargar data.json");
         return response.json();
