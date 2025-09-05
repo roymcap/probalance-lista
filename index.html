@@ -1,1 +1,61 @@
-<img src="logo.jpeg" alt="Pro Balance Suplementos" style="max-width: 200px; display: block; margin: 0 auto 2rem;">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pro Balance Suplementos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background: #f9f9f9;
+    }
+    img {
+      max-width: 200px;
+      display: block;
+      margin: 0 auto 2rem;
+    }
+    .marca {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      color: #333;
+    }
+    .producto {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .producto span {
+      max-width: 70%;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.jpeg" alt="Pro Balance Suplementos">
+  <div id="lista"></div>
+
+  <script>
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        const lista = document.getElementById('lista');
+        for (const marca in data) {
+          const marcaElem = document.createElement('div');
+          marcaElem.className = 'marca';
+          marcaElem.textContent = marca;
+          lista.appendChild(marcaElem);
+
+          data[marca].forEach(item => {
+            const prod = document.createElement('div');
+            prod.className = 'producto';
+            prod.innerHTML = `<span>${item.producto}</span><strong>${item.precio}</strong>`;
+            lista.appendChild(prod);
+          });
+        }
+      });
+  </script>
+</body>
+</html>
