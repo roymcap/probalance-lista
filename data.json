@@ -1,14 +1,22 @@
 {
   "STAR NUTRITION": [
-    { "producto": "ALL-IN-ONE VITAMIN X60 COMP", "precio": "$180.00" },
-    { "producto": "WHEY PROTEIN X 2 Lbs - CHOCOLATE", "precio": "$780.00" },
-    { "producto": "JUST PLANT X 2 Lbs - DOYPACK", "precio": "$690.00" }
+    { "producto": "ALL-IN-ONE VITAMIN X60 COMP", "precio": "$18.000" },
+    { "producto": "WHEY PROTEIN X 2 Lbs - DOYPACK VAINILLA - CHOCOLATE", "precio": "$38.000" },
+    { "producto": "PLATINUM WHEY ISOLATE CHOCOLATE - VAINILLA 2 Lbs (MILK SPECIALTIES - USA)", "precio": "$72.900" },
+    { "producto": "MUTANT MASS CHOCOLATE SUIZO 5 Kg", "precio": "$79.000" },
+    { "producto": "JUST PLANT X 2 Lbs - DOYPACK", "precio": "$38.000" },
+    { "producto": "JUST WHEY X 2 Lbs - DOYPACK", "precio": "$42.500" },
+    { "producto": "ZMA X 90 CAPS", "precio": "$20.000" },
+    { "producto": "OMEGA 3 FISH OIL 60 CAPS", "precio": "$27.000" },
+    { "producto": "MAGNESIO 500 Grs x 60 CAPS", "precio": "$14.000" },
+    { "producto": "COLLAGEN HIDROLIZADO LIMÓN 210 Grs", "precio": "$18.000" },
+    { "producto": "CREATINA MONOHIDRATO EEUU X 300 Grs - DOYPACK", "precio": "$29.700" },
+    { "producto": "SHAKER PUMP V8 400 Ml", "precio": "$7.000" }
   ],
-  "DYMATIZE": [
-    { "producto": "ISO 2 Lbs. DOYPACK VANILLA", "precio": "$780.00" }
+  "ONE FIT": [
+    { "producto": "CITRATO DE MAGNECIO 150 Grs", "precio": "$9.800" },
+    { "producto": "CREATINA MONOHIDRATO 200 Grs.", "precio": "$16.500" },
+    { "producto": "CREATINA MONOHIDRATO 500 Grs.", "precio": "$25.900" },
+    { "producto": "CLASSIC WHEY PROTEIN 2 Lbs - DOYPACK VAINILLA", "precio": "$25.200" },
+    { "producto": "OPTIMUS COLLAGEN CON VITAMINA C (240 Grs)", "precio": "$14.200" }
   ],
-  "EXUU": [
-    { "producto": "CREATINA MONOHIDRATO X 20 GRS DOYPACK", "precio": "$70.00" },
-    { "producto": "AMINOÁCIDOS X 20 GRS DOYPACK", "precio": "$70.00" }
-  ]
-}
