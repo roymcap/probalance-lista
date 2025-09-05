@@ -1,0 +1,14 @@
+{
+  "STAR NUTRITION": [
+    { "producto": "ALL-IN-ONE VITAMIN X60 COMP", "precio": "$180.00" },
+    { "producto": "WHEY PROTEIN X 2 Lbs - CHOCOLATE", "precio": "$780.00" },
+    { "producto": "JUST PLANT X 2 Lbs - DOYPACK", "precio": "$690.00" }
+  ],
+  "DYMATIZE": [
+    { "producto": "ISO 2 Lbs. DOYPACK VANILLA", "precio": "$780.00" }
+  ],
+  "EXUU": [
+    { "producto": "CREATINA MONOHIDRATO X 20 GRS DOYPACK", "precio": "$70.00" },
+    { "producto": "AMINOÁCIDOS X 20 GRS DOYPACK", "precio": "$70.00" }
+  ]
+}
