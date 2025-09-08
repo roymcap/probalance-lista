@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual APB - Carga de Precios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      color: #4caf50;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.75rem;
+    }
+    .bloque {
+      background: #f9f9f9;
+      border-left: 4px solid #4caf50;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 6px;
+    }
+    .checklist {
+      background: #e0f7e0;
+      border-left: 4px solid #2e7d32;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📘 Manual APB - Carga de Precios</h1>
+
+  <div class="bloque">
+    <strong>Objetivo:</strong> Actualizar un precio en la lista de suplementos y que se vea correctamente en la web pública.
+  </div>
+
+  <h2>🛠️ Requisitos</h2>
+  <ul>
+    <li>Acceso a la planilla de Google Sheets</li>
+    <li>Cuenta de GitHub y acceso al repositorio</li>
+    <li>Archivos <code>index.html</code> y <code>data.json</code> funcionando</li>
+  </ul>
+
+  <h2>📘 Pasos completos</h2>
+
+  <h3>1. Modificar el precio en Google Sheets</h3>
+  <ul>
+    <li>Abrí la planilla</li>
+    <li>Buscá el producto y cambiá el precio</li>
+    <li>Verificá ortografía, espacios y formato</li>
+  </ul>
+
+  <h3>2. Exportar como CSV</h3>
+  <ul>
+    <li>Archivo → Descargar → Valores separados por comas (.csv)</li>
+    <li>Guardá el archivo en una carpeta accesible</li>
+  </ul>
+
+  <h3>3. Convertir a <code>data.json</code></h3>
+  <ul>
+    <li>Abrí el CSV en un editor de texto</li>
+    <li>Usá la rutina para convertirlo a JSON estructurado</li>
+    <li>Verificá comillas, comas, formato de precios</li>
+    <li>Guardá como <code>data.json</code></li>
+  </ul>
+
+  <h3>4. Subir a GitHub</h3>
+  <ul>
+    <li>Entrá al repositorio</li>
+    <li>Editá el archivo <code>data.json</code></li>
+    <li>Pegá el nuevo contenido</li>
+    <li>Commit con descripción clara</li>
+  </ul>
+
+  <h3>5. Verificar en la web</h3>
+  <ul>
+    <li>Abrí la página pública</li>
+    <li>Recargá con <code>Ctrl + Shift + R</code></li>
+    <li>Confirmá que el precio se actualizó</li>
+  </ul>
+
+  <h3>6. Backup</h3>
+  <ul>
+    <li>Guardá el CSV en tu carpeta de historial</li>
+    <li>Opcional: subí el CSV a una rama secundaria en GitHub</li>
+  </ul>
+
+  <div class="checklist">
+    <strong>✅ Checklist rápida</strong>
+    <ul>
+      <li>[ ] Modifiqué el precio en Google Sheets</li>
+      <li>[ ] Exporté como CSV</li>
+      <li>[ ] Convertí a <code>data.json</code> sin errores</li>
+      <li>[ ] Subí el nuevo <code>data.json</code> a GitHub</li>
+      <li>[ ] Verifiqué en la web</li>
+      <li>[ ] Guardé el CSV como backup</li>
+    </ul>
+  </div>
+</body>
+</html>
