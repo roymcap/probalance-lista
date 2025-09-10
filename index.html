@@ -71,26 +71,26 @@
       max-width: 640px;
       margin-left: auto;
       margin-right: auto;
+      position: relative;
       text-align: center;
     }
-    .whatsapp .contacto {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-top: 0.5rem;
-    }
-    .whatsapp img {
-      width: 24px;
-      height: 24px;
-      vertical-align: middle;
+    .whatsapp .logo {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      width: 30px;
+      height: 30px;
       object-fit: contain;
+    }
+    .whatsapp .contacto {
+      margin-top: 2rem; /* Espacio para no solapar con el logo */
     }
     .whatsapp a {
       color: #222;
       text-decoration: none;
       font-weight: bold;
       line-height: 1;
+      display: block;
     }
   </style>
 </head>
@@ -105,10 +105,10 @@
   </div>
 
   <div class="whatsapp">
+    <img src="wapp.png" alt="WhatsApp" class="logo">
     Para compras, dudas o consultas:<br>
     Contactanos por WhatsApp<br>
     <div class="contacto">
-      <img src="wapp.png" alt="WhatsApp">
       <a href="https://wa.me/5491134210308" target="_blank">11-3421-0308</a>
     </div>
   </div>
