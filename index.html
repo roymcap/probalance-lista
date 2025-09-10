@@ -50,9 +50,9 @@
     .nota-final {
       margin-top: 3rem;
       padding: 1.5rem;
-      background: #e0f7e0;
-      border-left: 6px solid #4caf50;
-      font-size: 1.2rem;
+      background: #eef3ee;
+      border-left: 6px solid #7cae7c;
+      font-size: 1.1rem;
       line-height: 1.6;
       border-radius: 6px;
       max-width: 640px;
@@ -62,14 +62,25 @@
     .whatsapp {
       margin-top: 2rem;
       padding: 1.5rem;
-      background: #fff3cd;
-      border-left: 6px solid #ffc107;
-      font-size: 1.2rem;
+      background: #f6fef6;
+      border-left: 6px solid #25D366;
+      font-size: 1.1rem;
       line-height: 1.6;
       border-radius: 6px;
       max-width: 640px;
       margin-left: auto;
       margin-right: auto;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .whatsapp img {
+      width: 24px;
+      height: 24px;
+    }
+    .whatsapp a {
+      color: #222;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -78,13 +89,14 @@
   <div id="lista"></div>
 
   <div class="nota-final">
-    Aceptamos efectivo, transferencia.<br>
-    Puntos de retiro en Villa Pueyrredón, Villa Devoto, CABA.
+    💵 Aceptamos efectivo, transferencia.<br>
+    📍 Puntos de retiro en Villa Pueyrredón, Villa Devoto, CABA.
   </div>
 
   <div class="whatsapp">
-    📲 Para compras, dudas o consultas: <strong>Contactanos por WhatsApp</strong> al  
-    <a href="https://wa.me/5491134210308" target="_blank">11-3421-0308</a>
+    <img src="wapp.png" alt="WhatsApp">
+    <span>Para compras, dudas o consultas: <strong>Contactanos por WhatsApp</strong> al  
+    <a href="https://wa.me/5491134210308" target="_blank">11-3421-0308</a></span>
   </div>
 
   <script>
@@ -115,5 +127,3 @@
   </script>
 </body>
 </html>
-
-
