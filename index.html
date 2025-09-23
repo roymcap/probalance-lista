@@ -87,6 +87,7 @@
     }
     .whatsapp img {
       height: 20px;
+      width: auto;
       vertical-align: middle;
       margin-right: 8px;
     }
@@ -141,16 +142,4 @@
           lista.appendChild(marcaElem);
 
           data[marca].forEach(item => {
-            const prod = document.createElement('div');
-            prod.className = 'producto';
-            prod.innerHTML = `<span>${item.producto}</span><strong>${item.precio}</strong>`;
-            lista.appendChild(prod);
-          });
-        }
-      })
-      .catch(error => {
-        document.getElementById('lista').innerHTML = `<p style="color:red;">Error al cargar la lista: ${error.message}</p>`;
-      });
-  </script>
-</body>
-</html>
+            const prod = document
