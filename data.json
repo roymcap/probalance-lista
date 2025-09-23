@@ -14,12 +14,13 @@
     { "producto": "SHAKER PUMP V8 400 Ml", "precio": "$7.000" }
   ],
   "ONE FIT": [
-    { "producto": "CITRATO DE MAGNECIO 150 Grs", "precio": "$9.800" },
-    { "producto": "CREATINA MONOHIDRATO 200 Grs.", "precio": "$16.500" },
-    { "producto": "CREATINA MONOHIDRATO 500 Grs.", "precio": "$25.900" },
-    { "producto": "CLASSIC WHEY PROTEIN 2 Lbs - DOYPACK VAINILLA", "precio": "$25.200" },
-    { "producto": "OPTIMUS COLLAGEN CON VITAMINA C (240 Grs)", "precio": "$14.200" }
-  ],
+  { "producto": "CITRATO DE MAGNECIO 150 Grs", "precio": "$9.875" },
+  { "producto": "CREATINA MONOHIDRATO 200 Grs.", "precio": "$16.425" },
+  { "producto": "CREATINA MONOHIDRATO 500 Grs.", "precio": "$28.625" },
+  { "producto": "CLASSIC WHEY PROTEIN 2 Lbs - DOYPACK VAINILLA - CHOCOLATE", "precio": "$27.638" },
+  { "producto": "CLASSIC WHEY PROTEIN 2 Lbs - POTE SABORES: CHOCOLATE - VAINILLA - FRUTILLA - COCO - DULCE DE LECHE", "precio": "$30.525" },
+  { "producto": "OPTIMUS COLLAGEN CON VITAMINA C (240 Grs)", "precio": "$14.213" }
+],
   "ENA SPORT": [
     { "producto": "CREATINA MICRONIZADA SABOR NEUTRO 300 Grs", "precio": "$29.900" },
     { "producto": "SPIRULINA 60 COMP", "precio": "$9.000" },
