@@ -85,20 +85,26 @@
       margin-right: auto;
       text-align: center;
     }
-    .whatsapp img {
-      height: 20px;
-      width: auto;
-      vertical-align: middle;
-      margin-right: 8px;
-    }
     .whatsapp .contacto {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
       margin-top: 0.5rem;
     }
-    .whatsapp a {
-      color: #222;
+    .whatsapp .contacto a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       text-decoration: none;
+      color: #222;
       font-weight: bold;
-      line-height: 1;
+      font-size: 1rem;
+    }
+    .whatsapp img {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
     }
   </style>
 </head>
@@ -119,11 +125,13 @@
   </div>
 
   <div class="whatsapp">
-    <img src="wapp.png" alt="WhatsApp">
     <strong>Contacto por WhatsApp</strong><br>
-    Para compras, dudas o consultas:<br>
+    Para compras, dudas o consultas:
     <div class="contacto">
-      <a href="https://wa.me/5491134210308" target="_blank">11-3421-0308</a>
+      <a href="https://wa.me/541134210308" target="_blank">
+        <img src="wapp.png" alt="WhatsApp">
+        11-3421-0308
+      </a>
     </div>
   </div>
 
@@ -142,4 +150,16 @@
           lista.appendChild(marcaElem);
 
           data[marca].forEach(item => {
-            const prod = document
+            const prod = document.createElement('div');
+            prod.className = 'producto';
+            prod.innerHTML = `<span>${item.producto}</span><strong>${item.precio}</strong>`;
+            lista.appendChild(prod);
+          });
+        }
+      })
+      .catch(error => {
+        document.getElementById('lista').innerHTML = `<p style="color:red;">Error al cargar la lista: ${error.message}</p>`;
+      });
+  </script>
+</body>
+</html>
